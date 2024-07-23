@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>Marin Marian Software Developer</title>
+  </head>
+  <body>
+    <!-- Nav container -->
+    <nav class="relative container mx-auto p-6">
+      <div class="flex items-center justify-between">
+        <!-- Flex container for Logo/Menu -->
+        <div class="flex items-center space-x-20">
+          <!-- Logo -->
+          <a href="/"
+            ><img
+              src="img/Logo.svg"
+              alt="
+            an image with the text Marin Marian which is a logo"
+          /></a>
+        </div>
+        <div
+          class="hidden items-center space-x-6 font-bold text-grayishViolet lg:flex"
+        >
+          <a
+            href="#Projects"
+            class="text-grayishViolet hover:text-veryDarkViolet"
+          >
+            Projects
+          </a>
+          <a
+            href="#contact"
+            class="text-grayishViolet hover:text-veryDarkViolet"
+          >
+            Contact
+          </a>
+        </div>
+        <!--  Hamburger Button -->
+        <button
+          id="menu-btn"
+          class="block hamburger lg:hidden focus:outline-none"
+          type="button"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="menu"
+        class="absolute hidden rounded-lg bg-darkViolet/90 left-6 right-6 top-16 z-10"
+      >
+        <div
+          class="flex flex-row py-2 items-center justify-center w-full font-bold text-white rounded-sm"
+        >
+          <a href="#Projects" class="w-full text-center"> Projects </a>
+          <a href="#contact" class="w-full text-center"> Contact </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <!-- Hero container -->
+      <div
+        class="container flex flex-col-reverse mx-auto p-6 lg:flex-row lg:h-screen"
+      >
+        <!-- Content container -->
+        <div class="flex flex-col space-y-10 mb-44 lg:w-1/2 xl:mb-52 lg:mt-36">
+          <h1
+            class="text-4xl font-bold text-center lg:text-5xl lg:max-w-md lg:text-left"
+          >
+            HEY, I'M MARIN MARIAN
+          </h1>
+          <p
+            class="text-2xl text-center text-gray-500 lg:max-w-md lg:text-left"
+          >
+            Software developer who enjoys working with both hardware and web,
+            ready for new challenges
+          </p>
+          <div
+            class="mx-auto lg:mx-0 hover:-translate-y-0.5 transition-all duration-150"
+          >
+            <a
+              href="#Projects"
+              class="py-5 px-10 text-2xl font-bold text-white bg-cyan rounded-full lg:py-4 hover:opacity-70"
+            >
+              View My Projects
+            </a>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="mb-24 mx-auto md:w-96 lg:w-1/2 lg:mb-0">
+          <img
+            style="transform: scaleX(-1)"
+            src="img/avatar.svg"
+            alt="the brand logo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Sections -->
+    <section id="Projects" class="py-24 bg-gray-100">
+      <div class="relative container mx-auto px-3">
+        <h2 class="relative text-7xl mb-6 font-bold text-center">
+          Projects
+          <span
+            class="block absolute left-1/2 transform -translate-x-1/2 mt-3 w-full h-2 bg-grayishViolet md:w-1/4"
+          ></span>
+        </h2>
+        <p class="max-w-xs mx-auto text-center text-gray-700 md:max-w-md">
+          Here you will find some of the personal projects that I created in my
+          free time or when I learned something
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Presentation Section -->
+    <section id="ProjectView" class="bg-gray-100">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-12 gap-x-0 py-24">
+        <!-- Project 01 -->
+
+        <div class="flex flex-col justify-center items-center">
+          <h5 class="text-grayishViolet text-9xl">01</h5>
+          <h2 class="text-3xl mb-6 font-bold text-center">
+            My first website portfolio
+          </h2>
+          <p class="max-w-xs mx-auto text-center text-gray-400 md:max-w-md">
+            A project that helped me learn the basics of the web and to have
+            more confidence in my abilities
+          </p>
+          <a
+            href="https://marianm.netlify.app/"
+            target="_blank"
+            class="py-3 px-6 mt-4 text-1xl font-bold text-white bg-darkViolet rounded-full lg:py-4 hover:bg-opacity-70"
+          >
+            Check the site
+          </a>
+        </div>
+        <div class="w-full mt-10 lg:w-2/3 lg:mx-auto lg:mt-0">
+          <img
+            src="img/Project1.avif"
+            alt="the brand logo"
+            class="rounded-lg shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-darkViolet/70"
+          />
+        </div>
+
+        <!-- Project 02 -->
+
+        <div class="w-full mt-10 lg:w-2/3 py-24 lg:mx-auto lg:mt-0">
+          <img
+            src="img/Project2.avif"
+            alt="the brand logo"
+            class="rounded-lg shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-darkViolet/70"
+          />
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <h5 class="text-grayishViolet text-9xl">02</h5>
+          <h2 class="text-3xl mb-6 font-bold text-center">SmarthomerPi</h2>
+          <p class="max-w-xs mx-auto text-center text-gray-400 md:max-w-md">
+            My first interaction with the hardware, more precisely with
+            raspberry pi and some sensors
+          </p>
+          <a
+            href="https://www.youtube.com/watch?v=A5CtTh3PT_0"
+            target="_blank"
+            class="py-3 px-6 mt-4 text-1xl font-bold text-white bg-darkViolet rounded-full lg:py-4 hover:bg-opacity-70"
+          >
+            Check the site
+          </a>
+        </div>
+
+        <!-- Project 3 -->
+
+        <div class="flex flex-col justify-center items-center">
+          <h5 class="text-grayishViolet text-9xl">03</h5>
+          <h2 class="text-3xl mb-6 font-bold text-center">CustomThemesWPF</h2>
+          <p class="max-w-xs mx-auto text-center text-gray-400 md:max-w-md">
+            I made this project more to improve my knowledge of WPF and to
+            understand how changing a theme works
+          </p>
+          <a
+            href="https://github.com/MarianM00/CustomThemesWPF"
+            target="_blank"
+            class="py-3 px-6 mt-4 text-1xl font-bold text-white bg-darkViolet rounded-full lg:py-4 hover:bg-opacity-70"
+          >
+            Check the site
+          </a>
+        </div>
+        <div class="w-full mt-10 lg:w-2/3 lg:mx-auto lg:mt-0">
+          <img
+            src="img/Project3.avif"
+            alt="the brand logo"
+            class="rounded-lg shadow-none transition-shadow duration-300 ease-in-out hover:shadow-xl hover:shadow-darkViolet/70"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="py-24 bg-darkViolet">
+      <div class="flex flex-col p-2 space-y-6">
+        <h5
+          class="mx-auto space-y-10 text-4xl font-bold text-center text-white"
+        >
+          Let's get in touch
+        </h5>
+        <div
+          class="flex px-10 py-5 mx-auto justify-center items-center w-50 space-x-7"
+        >
+          <a href="mailto:marin_puiu99@yahoo.com" target="_blank">
+            <img
+              src="img/icon-gmail.svg"
+              alt="github logo"
+              class="ficon w-8 h-8"
+            />
+          </a>
+          <a href="https://github.com/MarianM00" target="_blank">
+            <img
+              src="img/icon-github.svg"
+              alt="github logo"
+              class="ficon w-8 h-8"
+            />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img
+              src="img/icon-instagram.svg"
+              alt="instagram logo"
+              class="ficon w-8 h-8"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
